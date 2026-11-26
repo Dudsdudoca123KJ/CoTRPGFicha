@@ -162,3 +162,4 @@ grant execute on function public.is_campaign_gm(uuid) to authenticated;
 
 -- Ative Realtime para characters e monsters no painel Database > Publications.
 -- Inclua as duas tabelas na publicação supabase_realtime.
+ALTER TABLE public.characters ADD COLUMN IF NOT EXISTS shield_catalog_name text;
